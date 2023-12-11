@@ -1,0 +1,47 @@
+
+
+body{
+    background-color: bisque;
+    text-align: center;
+}
+button img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+}
+button{
+    background-color: transparent;
+    border: none;
+    
+}
+#reset{
+    height: 50px;
+    width: 50px;
+    
+}
+table th{
+    background-color:black;
+    color: white;
+    height: 50px;
+    width: 150px;
+}
+
+table td{
+    background-color: beige;
+    /* color: black; */
+}
+#buttons-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#summary-container, .table2{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RPS Game</title>
+    <link rel="stylesheet" href="resources\images\style.css">
+    <link rel="icon" href="resources\images\favicon.ico">
+
+</head>
+<body>
+    <h1> Rock Paper Scissors</h1>
+    <div id="buttons-container">
+        <button onclick="captureUserMove('Rock'); generateComputerMove();evaluateMoves(); updateGameScores();renderGameSummary();renderGameHistory();"><img src="resources\images\rock.png"></button>
+        <button onclick="captureUserMove('Paper'); generateComputerMove(); evaluateMoves();updateGameScores(); renderGameSummary();renderGameHistory();"><img src="resources\images\paper.png"></button>
+        <button onclick="captureUserMove('Scissors'); generateComputerMove();evaluateMoves(); updateGameScores();renderGameSummary();renderGameHistory(); "><img src="resources\images\scissors.png"></button>
+        <button onclick="resetScore();renderGameSummary();renderGameHistory();"><img id="reset" src="resources\images\reset.jpg" alt=""> </button>
+    </div>
+    <div id="summary-container">
+        <h1>Game Summary</h1>
+        
+        <table >
+            <tr>
+                <th>Wins</th>
+                <th>Loses</th>
+                <th>Ties</th>
+                <th>Games Played</th>
+            </tr>
+            <tr>
+                <td id="wins">0</td>
+                <td id="looses">0</td>
+                <td id="ties">0</td>
+                <td id="gamePlayed">0</td>
+            </tr>
+        </table>
+    </div>
+    <h1>Game History</h1>
+    <div class="table2">
+    <table id="gameHistroy">
+        <tr>
+            <th>#</th>
+            <th>User Move</th>
+            <th>Computer Move</th>
+            <th>Result</th>
+            
+        </tr>
+    </table>
+</div>
+    <script  src="resources\images\script.js"></script>
+    
+   
+</body>
+</html>
